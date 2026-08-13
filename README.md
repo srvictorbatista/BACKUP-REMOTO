@@ -108,6 +108,7 @@ apt-get update && apt-get install -y pv
 <BR>
 
 **VERIFICAÇÃO RÁPIDA DE TODAS AS DEPENDÊNCIAS**
+
 O mesmo comando serve para verificação em ambos os hosts (local e remoto):
 
 ```bash
