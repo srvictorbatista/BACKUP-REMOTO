@@ -10,7 +10,7 @@
 
 **DEMANDANTE:** Helo's World LTDA _[helosworld.com.br](https://helosworld.com.br/)_
 
-**VERSÃO DESTE DOCUMENTO** _1.0.16 - corrige ciclo de vida do arquivo de status e uso do log, número de chamadas remotas via SSH e lista de dependências locais._
+**VERSÃO DESTE DOCUMENTO** _1.0.16 - corrige ciclo de vida do arquivo de status e uso do log, número de chamadas remotas e lista de dependências locais._
 
 <BR><BR><BR>
 
