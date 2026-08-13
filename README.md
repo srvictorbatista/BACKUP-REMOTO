@@ -131,7 +131,7 @@ Havendo necessidade. As variáveis poderão ser informadas a cada execução no 
 ```bash
 NOME="NOME_SERVIDOR"; SENHA="SUA_SENHA_AQUI"; SSH_ALVO="SEU_USER@HOSTDESTINO"; # REDEFINE VARIAVEIS DE AMBIENTE TEMPORARIAMENTE
 ```
-INFO: Ao deslogar, estas definições retornam ao padrão do ambiente. E quanto implementadas, servem apenas ao terminal em uso.
+INFO: Ao deslogar, estas definições retornam ao padrão do ambiente. E quando implementadas, servem apenas ao terminal em uso.
 
 
 
