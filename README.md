@@ -43,7 +43,7 @@ O nome do arquivo de backup remoto é assumido sem espaços em seu componente fi
 ### SEGURANÇA E BOAS PRÁTICAS
 
 A senha declarada em `SENHA` é entregue ao subprocesso por variável de ambiente, o que evita que apareça diretamente na linha de comando do processo `sshpass`; ainda assim, permanece em texto plano no histórico do shell durante o uso do comando de lançamento. Para uso recorrente ou em ambiente compartilhado, vale observar que a senha por si só é insuficiente sem as chaves SSH e os certificados de autorização de cada usuário/rede/tunnel para a efetiva autenticação por senha, mediantes os respectivos certificados de ambiente e chave SSH exigidos em cada conjunto tunnel/rede/servidor, isto não elimina a dependência de `sshpass` quanto qualquer segredo em texto plano na linha de comando. Com exceção da própria senha (sujeita a falhas de digitação por parte do usuário), a ausência de retorno em caso de erro de autenticação, ou verificação complementar sobre chaves e certificados no momento da execução ou aviso informativo. Não foi aplicada ao comando, a pedido deliberado da organização. Uma vez que os ambientes destinados (treinamento, homologação e produção). Quando em situações de falha, já são devidamente monitoradas e reportadas de forma ativa como ocorrências observacionais, independente de quaisquer comandos utilizados. 
-Ainda assim, para limpeza eventual do histórico de comandos recomenda-se ao sair/desconectar o uso de:
+Ainda assim, para limpeza eventual do histórico de comandos recomenda-se ao sair/desconectar, o uso de:
 
 ```bash
 history -c && history -w && > ~/.bash_history && unset HISTFILE && exit   # LIMPAR HISTORICO DE COMANDOS E SAIR
