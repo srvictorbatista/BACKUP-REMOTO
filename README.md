@@ -284,3 +284,4 @@ history -c && history -w && > ~/.bash_history && unset HISTFILE && exit   # LIMP
 
 
 
+<!-- # Versão aberta ao escrutínio público. -->
