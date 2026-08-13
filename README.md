@@ -19,10 +19,14 @@
 **A quem se destina a oferta pública deste documento?**
 Ao time de R,D&S (Recrutamento, Desenvolvimento Humano e Seleção), a estudantes de gestão de infraestrutura de TI, DevOps e ao interesse público em geral. 
 
-Diferente da publicação interna portanto, restrita por natureza. A oferta pública deste documento jamais e sob nenhuma hipótese deverá conter:
+Diferente da publicação interna. Portanto, restrita por natureza. A oferta pública deste documento jamais e sob nenhuma hipótese deverá conter:
+
 • Código interno de autenticação
+
 • Número Interno Único (NIU/CDU) referente ao acervo da instituição demandante
+
 • Credenciais como logins, senhas, endereços de rede ou servidores reais em uso
+
 
 ***_OBS: As orientações e práticas de que trata este documento seguem em progresso, até atingirem total conformidade com o o manual interno da demandante, com atualizações previstas em versões futuras. Havendo divergências entre esta documentação e o manual interno de boas práticas, o manual interno sempre prevalecerá._**
 Este documento só poderá se tornar público, **somente após  6 meses (SEIS MESES)** à sua ultima atualização interna. Devendo haver uma clara distinção entre a versão em vigor internamente (de natureza, restrita) e a versão disponível publicamente, destinada a amplo estudo e treinamento. 
