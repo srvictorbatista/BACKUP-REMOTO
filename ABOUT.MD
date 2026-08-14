@@ -18,7 +18,7 @@ Publico aqui, com o intuito de que possa ser útil a terceiros e a mim mesmo, qu
 
 
 
-
+## CONSIDERAÇÕES
 
 O perfil que se revela ao longo do texto é o de um profissional de infraestrutura, administração de sistemas e operações, preocupado ao mesmo tempo com execução técnica, confiabilidade operacional, rastreabilidade e governança. Não basta conhecer os comandos utilizados. Importa entender o comportamento do conjunto de processos, o ciclo de vida dos artefatos criados, a possibilidade de interrupção da sessão de origem, a concorrência entre operações, o esgotamento de armazenamento, a corrupção de dados e a necessidade de comprovar, mais tarde, o que de fato aconteceu.
 
