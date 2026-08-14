@@ -1,8 +1,8 @@
 # SOBRE
 
-## QUEM ESCREVE ESTE DOCUMENTO
+## QUEM ESCREVE O DOCUMENTO
 
-Assino como responsável técnico pela criação e manutenção deste material, e essa condição se sustenta pelo próprio conteúdo produzido, que exige familiaridade direta com administração de sistemas Linux, processos em segundo plano, shell Bash, transferência de grandes volumes de dados, verificação criptográfica, gerenciamento de arquivos, observabilidade e práticas de infraestrutura.
+Assino como responsável técnico pela criação e manutenção do documento README.MD analisado, e essa condição se sustenta pelo próprio conteúdo produzido, que exige familiaridade direta com administração de sistemas Linux, processos em segundo plano, shell Bash, transferência de grandes volumes de dados, verificação criptográfica, gerenciamento de arquivos, observabilidade e práticas de infraestrutura.
 
 _**Sr. Victor Batista**_
 
