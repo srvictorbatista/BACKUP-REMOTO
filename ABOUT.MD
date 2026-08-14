@@ -19,6 +19,17 @@ Publico aqui, com o intuito de que possa ser útil a terceiros e a mim mesmo, qu
 <BR><BR>
 
 
+
+## AVALIAÇÃO TÉCNICA
+
+O maior mérito técnico está na integração de várias garantias em um único fluxo, sem depender de uma única condição de sucesso: validação de parâmetros, validação de diretório local, validação de dependência, teste de conexão, localização do arquivo, obtenção de tamanho, verificação de espaço, transferência, detecção de falha do pipeline, cálculo de hash remoto, cálculo de hash local e comparação final. Esse encadeamento reduz significativamente a probabilidade de uma execução aparentemente bem-sucedida produzir um resultado inválido. Também é ponto forte a remoção do arquivo local quando ocorre falha de transferência ou divergência de hash, evitando deixar no diretório final um arquivo que poderia ser confundido com um backup válido, assim como a separação entre execução e acompanhamento e a persistência dos logs.
+
+O comando de lançamento é extremamente denso, e essa compactação em uma única linha atende ao objetivo operacional declarado, mas reduz a legibilidade para manutenção. Existe diferença entre comando de execução e código de produção: Uma linha longa é conveniente para distribuição e execução manual, porém mais difícil de revisar, versionar, testar e modificar por operadores menos experientes. As explicações extensas que acompanham o documento compensam, em parte, essa dificuldade.
+
+<BR><BR>
+
+
+
 O perfil que se revela ao longo do texto é o de um profissional de infraestrutura, administração de sistemas e operações, preocupado ao mesmo tempo com execução técnica, confiabilidade operacional, rastreabilidade e governança. Não basta conhecer os comandos utilizados. Importa entender o comportamento do conjunto de processos, o ciclo de vida dos artefatos criados, a possibilidade de interrupção da sessão de origem, a concorrência entre operações, o esgotamento de armazenamento, a corrupção de dados e a necessidade de comprovar, mais tarde, o que de fato aconteceu.
 
 Essa preocupação aparece de forma concreta na utilização coordenada de `nohup`, `disown`, `trap`, `pipefail`, arquivo de status, PID, log persistente, `tail -F`, `pv`, `sha256sum`, `stat`, `find`, `sudo -n` e variáveis de ambiente. Cada elemento cumpre uma finalidade operacional distinta, mas nenhum deles foi pensado isoladamente. Juntos, compõem um pequeno sistema de controle de execução, e essa visão sistêmica atravessa todo o documento.
@@ -120,14 +131,6 @@ Este material atende a pelo menos quatro motivações simultâneas. A primeira �
 ### LEITURA DO PROBLEMA
 
 O problema original é simples na aparência, mas operacionalmente complexo. Copiar um arquivo grande é tarefa trivial. Garantir que ele seja o arquivo correto, que haja espaço suficiente, que a conexão permaneça funcional, que o processo sobreviva ao encerramento da sessão, que o operador consiga acompanhar a transferência e que o arquivo final seja exatamente igual ao original é tarefa consideravelmente mais complexa. Este documento registra justamente essa transformação de uma atividade manual em um procedimento controlado, dentro de uma infraestrutura distribuída, com diferentes servidores, redes e mecanismos de acesso intermediado por bastião, túnel, dispositivo relay e certificados.
-
-<BR><BR>
-
-## AVALIAÇÃO TÉCNICA
-
-O maior mérito técnico está na integração de várias garantias em um único fluxo, sem depender de uma única condição de sucesso: validação de parâmetros, validação de diretório local, validação de dependência, teste de conexão, localização do arquivo, obtenção de tamanho, verificação de espaço, transferência, detecção de falha do pipeline, cálculo de hash remoto, cálculo de hash local e comparação final. Esse encadeamento reduz significativamente a probabilidade de uma execução aparentemente bem-sucedida produzir um resultado inválido. Também é ponto forte a remoção do arquivo local quando ocorre falha de transferência ou divergência de hash, evitando deixar no diretório final um arquivo que poderia ser confundido com um backup válido, assim como a separação entre execução e acompanhamento e a persistência dos logs.
-
-O comando de lançamento é extremamente denso, e essa compactação em uma única linha atende ao objetivo operacional declarado, mas reduz a legibilidade para manutenção. Existe diferença entre comando de execução e código de produção: Uma linha longa é conveniente para distribuição e execução manual, porém mais difícil de revisar, versionar, testar e modificar por operadores menos experientes. As explicações extensas que acompanham o documento compensam, em parte, essa dificuldade.
 
 <BR><BR>
 
